@@ -1,0 +1,35 @@
+# Compile of pattern_moore.sv was successful.
+# Compile of tb_pattern_moore.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of pattern_moore.sv was successful.
+# Compile of tb_pattern_moore.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_pattern_moore
+# vsim -gui work.tb_pattern_moore 
+# Start time: 15:31:27 on May 11,2021
+# Loading sv_std.std
+# Loading work.tb_pattern_moore
+# Loading work.pattern_moore
+# Compile of pattern_moore.sv was successful.
+# Compile of tb_pattern_moore.sv was successful.
+# 2 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/tb_pattern_moore/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: osari  Hostname: DESKTOP-BKIN797  ProcessID: 1400
+#           Attempting to use alternate WLF file "./wlftym8c8n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftym8c8n
+add wave -position insertpoint  \
+sim:/tb_pattern_moore/A
+add wave -position insertpoint  \
+sim:/tb_pattern_moore/B
+# Compile of pattern_moore.sv was successful.
+# Compile of tb_pattern_moore.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : C:/Users/osari/Desktop/hw3/soru2_moore/tb/tb_pattern_moore.sv(20)
+#    Time: 360 ps  Iteration: 0  Instance: /tb_pattern_moore
+# Break in Module tb_pattern_moore at C:/Users/osari/Desktop/hw3/soru2_moore/tb/tb_pattern_moore.sv line 20
+# End time: 15:32:19 on May 11,2021, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 11
