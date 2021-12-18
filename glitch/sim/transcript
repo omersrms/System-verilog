@@ -1,0 +1,37 @@
+# Compile of glitch.sv was successful.
+# Compile of tb_glitch.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_glitch
+# vsim -gui work.tb_glitch 
+# Start time: 15:10:47 on Apr 09,2021
+# Loading sv_std.std
+# Loading work.tb_glitch
+# Loading work.glitch
+add wave -position insertpoint  \
+sim:/tb_glitch/a \
+sim:/tb_glitch/b \
+sim:/tb_glitch/c \
+sim:/tb_glitch/x
+# Compile of glitch.sv was successful.
+# Compile of tb_glitch.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# ** Note: $stop    : C:/Users/osari/Desktop/glitch/tb/tb_glitch.sv(18)
+#    Time: 200 ps  Iteration: 0  Instance: /tb_glitch
+# Break in Module tb_glitch at C:/Users/osari/Desktop/glitch/tb/tb_glitch.sv line 18
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_glitch
+# Loading work.glitch
+# Compile of glitch.sv was successful.
+# Compile of tb_glitch.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: Belirtilen modül bulunamadý.
+# 
+# 
+# ** Note: $stop    : C:/Users/osari/Desktop/glitch/tb/tb_glitch.sv(18)
+#    Time: 200 ps  Iteration: 0  Instance: /tb_glitch
+# Break in Module tb_glitch at C:/Users/osari/Desktop/glitch/tb/tb_glitch.sv line 18
+# End time: 15:12:45 on Apr 09,2021, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 2
